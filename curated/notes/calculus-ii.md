@@ -208,7 +208,62 @@ $\text{Theorem C}$ If $\lim_{n \to \infin}|a_n| = 0$, then $\lim_{n \to \infin}a
 
 $\bold{Example.}$ Does the sequence $a_n = (-1)^n \frac{n}{n^2+2}$ converge or diverge.
 
-## Conic Sections
+## Parametric Equations & Polar Coordinates
+
+$$\cot{2\theta} = \frac{a-c}{b}$$
+
+### Parametric Equations
+
+![!YouTube#d#hb](d4KADBFqpR0 "Professor Leonard - Lecture 10.2: Introduction to Parametric Equations")
+
+### Calculus of Parametric Equations
+
+![!YouTube#d#hb](1H6HrfX_qCA "Professor Leonard - Lecture 10.3: Calculus of Parametric Equations")
+
+### Polar Coordinates
+
+![!YouTube#d#hb](sWUyFQQ5QeI "Professor Leonard - Lecture 10.4: Using Polar Coordinates and Polar Equations")
+
+![polar graph#f](https://i.stack.imgur.com/35dGX.jpg "Source: [Math StackExchange](https://math.stackexchange.com/a/771678)")
+
+$$P(r,\theta)$$
+
+#### Polar to Rectangular Coordinates
+
+$$
+\begin{aligned}
+  x &= r \cos{\theta}
+  y &= r \sin{\theta}
+\end{aligned}
+$$
+
+Don't get those two confused, $x$ is the $\cos$ and $y$ is the $\sin$.
+
+#### Rectangular to Polar Coordinates
+
+We need our $r$ and $\theta$, we'll start by finding our $r$ using this trigonometry identity $r^2 = x^2 + y^2$. Next, we'll find our $\theta$ using $\tan{\theta} = \frac{y}{x}$. That will result a $\tan$ value that we can map into the polar graph.
+
+#### Symmetry Graphing of Polar Graph
+
+#### Finding Tangent Lines of Polar Graph
+
+The slope can be calculated by finding the derivative using the following equation
+
+$$
+\frac{dy}{dx} = \frac
+  {\frac{dr}{d\theta}\sin\theta + r\cos\theta}
+  {\frac{dr}{d\theta}\cos\theta - r\sin\theta}
+$$
+
+Plug in the $\theta$ to the final equation and that's your gradient slope right there ($m$).
+
+### Calculus of Polar Equations
+
+![!YouTube#d#hb](Kh265EC11OI "Professor Leonard - Lecture 10.5: Calculus of Polar Equations")
+
+#### Area Bound by Polar Curve
+
+#### Area Between Two Polar Curves
 
 ## Extras - Online Tools & References
 
