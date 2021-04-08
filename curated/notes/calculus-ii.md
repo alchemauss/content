@@ -224,9 +224,17 @@ $$\cot{2\theta} = \frac{a-c}{b}$$
 
 ![!YouTube#d#hb](sWUyFQQ5QeI "Professor Leonard - Lecture 10.4: Using Polar Coordinates and Polar Equations")
 
+Polar equation is defined like a single point, but instead of $(x, y)$ we'll use $(r, \theta)$ with $r$ being the radius or how long the line is from the center point, and $\theta$ being its rotation from $0\pi$. The graph below will help visualize how we'll draw our polar equations.
+
 ![polar graph#f](https://i.stack.imgur.com/35dGX.jpg "Source: [Math StackExchange](https://math.stackexchange.com/a/771678)")
 
-$$P(r,\theta)$$
+We will be working with a lot of graphing using trigonometry functions. There's a lot of common and repeated patterns for these kinds of questions and it will be helpful to know some of these beforehand. You can search up these names by yourself or put the individual functions in any [graphing calculator](https://www.desmos.com/calculator).
+
+$$
+\begin{aligned}
+  r &= 1 + \cos\theta \text{(cardioid)}
+\end{aligned}
+$$
 
 #### Polar to Rectangular Coordinates
 
@@ -263,7 +271,71 @@ Plug in the $\theta$ to the final equation and that's your gradient slope right 
 
 #### Area Bound by Polar Curve
 
+The area can be defined using the next equation where $\alpha$ is the starting value of $\theta$ and $\beta$ is where $\theta$ ends.
+
+$$\int_\alpha^\beta \frac{1}{2}r^2\ d\theta$$
+
+Let's say we need to find $r^2 = 4\cos2\theta$, we can find that $r = 2\sqrt{\cos2\theta}$. We always need to graph our functions if possible so we get a better understanding of what we're looking at and what we're about to find
+
+<iframe src="https://www.desmos.com/calculator/gl9w1k796b?embed" width="100%" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+This means that our area will be bound from $0$ to $\frac{\pi}{4}$ because it's symmetric across both the x and y-axis, so we can just find the area of one quadrant and multiply it by $4$.
+
+$$
+\begin{aligned}
+  A &= 4 \int_0^{\frac{\pi}{4}} \frac{1}{2}(4\cos2\theta)\ d\theta
+  \\[1em] &= 8 \int_0^{\frac{\pi}{4}} \cos2\theta\ d\theta
+  \\[1em] &= 8 \frac{\sin2\theta}{2}\ \Big|_0^{\frac{\pi}{4}}
+  \\[1em] &= 4\sin(2\frac{\pi}{4}) - 4\sin(0)
+  \\[1em] &= 4
+\end{aligned}
+$$
+
 #### Area Between Two Polar Curves
+
+We've covered the area bound by one curve, what about two? Well, just like our previous encounters with area, we can find out where they cross each other and find their intersecting area. In other words, big area minus small area.
+
+$$
+\begin{aligned}
+  A &= \int_\alpha^\beta \frac{1}{2}r_1^2 d\theta - \int_\alpha^\beta \frac{1}{2}r_2^2\ d\theta
+  \\[1em] &= \int_\alpha^\beta \frac{1}{2}\Big[r_1^2 - r_2^2\Big]\ d\theta
+\end{aligned}
+$$
+
+But, how do we find where they intersect? This goes back to algebra where we can find the intersection of two points by setting both of them equal to each other. Let's say we have $r = 3$ and $r = 2 + 2 \cos\theta$, we can find our $\theta$ for the formula above by calculating $3 = 2 + 2 \cos\theta$. Again, before that we need to graph them first so we get a better understanding of the area we're about to find
+
+<iframe src="https://www.desmos.com/calculator/nbu1ucnn3p?embed" width="100%" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+After calculating, we found that $\cos\theta = \frac{1}{2}$ and the possible values for our $\theta$ are $\frac{\pi}{3}$ and $\frac{5\pi}{3}$, but because we needed to go in a positive direction of change, we can't have $\frac{5\pi}{3}$ as our lower bound because it's greater than the current upper bound, so instead we'll use $-\frac{\pi}{3}$. But! Knowing that our area is symmetrical across the x-axis (because we graph it earlier), we can change our lower bound into $0$ and multiply our result by $2$. Plugging in these numbers into the formula gives us
+
+$$
+\begin{aligned}
+  A &= 2\int_{0}^{\frac{pi}{3}} \frac{1}{2}\Big[(2+2\cos\theta)^2 - 3^2\Big]\ d\theta
+  \\[1em] &= \int_{0}^{\frac{pi}{3}} 4\cos^2\theta + 8\cos\theta - 5\ d\theta
+  \\[1em] &= \int_{0}^{\frac{pi}{3}} 4\frac{1}{2}(1+\cos2\theta) + 8\cos\theta - 5\ d\theta
+  \\[1em] &= \int_{0}^{\frac{pi}{3}} 2\cos2\theta + 8\cos\theta - 3\ d\theta
+  \\[1em] &= \sin2\theta + 8\sin\theta - 3\theta\ \Big|_0^{\frac{\pi}{3}}
+  \\[1em] &= \Big[\sin2(\frac{\pi}{3}) + 8\sin(\frac{\pi}{3}) - 3(\frac{\pi}{3})\Big] - 0
+  \\[1em] &= \frac{\sqrt{3}}{2} + 8\frac{\sqrt{3}}{2} - \pi
+  \\[1em] &= 9\frac{\sqrt{3}}{2} - \pi
+\end{aligned}
+$$
+
+#### Arc Length with Polar Coordinates
+
+$$\int_\alpha^\beta \sqrt{(\frac{dr}{d\theta})^2 + r^2}\ d\theta$$
+
+#### Surface Area with Polar Coordinates
+
+The formula for a surface of revolution about the x-axis
+
+$$2\pi \int_\alpha^\beta r\sin\theta\sqrt{(\frac{dr}{d\theta})^2 + r^2}\ d\theta$$
+
+The formula for a surface of revolution about the y-axis
+
+$$2\pi \int_\alpha^\beta r\cos\theta\sqrt{(\frac{dr}{d\theta})^2 + r^2}\ d\theta$$
+
+***
 
 ## Extras - Online Tools & References
 
