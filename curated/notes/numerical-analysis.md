@@ -143,4 +143,5 @@ $$
 - [Octave Online REPL](https://octave-online.net/)
 - [Decimal Binary Converter](https://www.rapidtables.com/convert/number/decimal-to-binary.html)
 - [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+- [IEEE-754 Double Precision 64-bit](https://www.binaryconvert.com/result_double.html)
 - [Matrix Calculator](https://matrixcalc.org/en/)
