@@ -11,6 +11,38 @@ date:updated: 2021-03-25
 
 ## Preliminary - Introduction & Reviews
 
+### Natural Logarithm Function
+
+![!YouTube#d#hb](H9eCT6f_Ftw "Professor Leonard - Lecture 6.1: The Natural Log Function")
+
+Natural log functions ($\ln$) are just normal log functions ($\log$) with a base of $e$, but it's written in this special notation so we don't need to always write $\log_e x$ every time. Remember that logarithm function are just exponential functions written in a different way, so a function with a constraint of $b > 0, b \not = 1$, we'll have them as
+
+$$ y = \log_b x \quad \text{or} \quad x = b^y $$
+
+Here are the common operations we can use while working with the natural log functions.
+
+$$
+\begin{aligned}
+  \ln 1 &= 0 \\[1em]
+  \ln xy &= \ln x + \ln y \\[1em]
+  \ln \frac{x}{y} &= \ln x - \ln y \\[1em]
+  \ln x^r &= r \ln x
+\end{aligned}
+$$
+
+Here's a quick trivia on the correlation between $e^x$ and $\ln x$. They're both the inverse of each other, and we can see it by sketching their graphs and looking at the lines they produce.
+
+<figure>
+  <figcaption style="display: flex; justify-content: space-around">
+    <span>e^x</span>
+    <span>ln x</span>
+  </figcaption>
+  <iframe src="https://www.desmos.com/calculator/h2oopvrxs0?embed" width="48%" height="500px" style="border: 1px solid #ccc; float: left" frameborder=0></iframe>
+  <iframe src="https://www.desmos.com/calculator/z6lh3xsjvk?embed" width="48%" height="500px" style="border: 1px solid #ccc; float: right" frameborder=0></iframe>
+</figure>
+
+Now, it turns out that the derivative of $\ln x$ is $\frac{1}{x}$, which means the integral or anti-derivative of $\frac{1}{x}$ is $\ln x$. But, don't forget that the chain-rule applies here as well, which means when the natural log is $\ln 3x^2-1$, it becomes $\frac{6x}{3x^2-1}$.
+
 ### Tangent Line
 
 The $\text{tangent line (1)}$ to the function $f(x)$ at the point $x=a$ is a line that touches the graph of the function only at the point in question as is parallel (in some way) to the graph at that point, provided that the limit exists and is not $\infin$ or $-\infin$.
